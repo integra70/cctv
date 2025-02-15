@@ -1,0 +1,317 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* Reset de estilos: elimina márgenes y rellenos predeterminados, 
+       establece el modelo de caja y define la fuente general */
+}
+
+body {
+    text-align: center;
+    background-color: #f8f8f8;
+    /* Centra el texto y establece un color de fondo claro */
+}
+
+/* Barra de navegación */
+.barra-de-navegación {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Diseño de la barra de navegación con espacio entre elementos 
+       y un fondo blanco con sombra sutil */
+}
+
+.barra-de-navegación a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    /* Estiliza los enlaces de la barra de navegación: 
+       margen, color, negrita y tamaño */
+}
+
+.logo {
+    width: 120px;
+    /* Define el tamaño del logo */
+}
+
+/* Estilos generales del título y subtítulo */
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px 0;
+    /* Tamaño grande y margen para separar del contenido */
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+    /* Define el tamaño del subtítulo con margen y color */
+}
+
+.imagen-principal {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    /* Imagen principal con tamaño responsivo y sombra */
+}
+
+/* SECCIÓN NOSOTROS */
+#nosotros {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20em;
+    /* Distribución en dos columnas con espacio entre ellas */
+}
+
+#nosotros h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Centra el título de la sección */
+}
+
+#nosotros .texto {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+#nosotros img {
+    width: 100%;
+    border-radius: 5px;
+    /* Imagen ajustada al ancho disponible con bordes redondeados */
+}
+
+/* SECCIÓN POR QUÉ ELEGIRNOS */
+#porque-elegirnos {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 20em
+    /* Sección centrada con margen */
+}
+
+#porque-elegirnos h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Margen inferior al título */
+}
+
+#porque-elegirnos .contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+    /* Flexbox para distribuir contenido en dos columnas */
+}
+
+#porque-elegirnos .texto {
+    flex: 1;
+    /* Permite que el texto ocupe el espacio disponible */
+}
+
+#porque-elegirnos ul {
+    list-style-type: none;
+    padding: 0;
+    /* Elimina los estilos predeterminados de la lista */
+}
+
+#porque-elegirnos li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Cada elemento de la lista tiene un fondo blanco con sombra */
+}
+
+#porque-elegirnos img {
+    width: 45%;
+    border-radius: 5px;
+    /* Imagen ajustada y con bordes redondeados */
+}
+
+/* SECCIÓN NUESTROS SERVICIOS */
+#nuestros-servicios {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top:20em
+    /* Distribución en dos columnas */
+}
+
+#nuestros-servicios h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nuestros-servicios ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#nuestros-servicios li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#nuestros-servicios img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* SECCIÓN NUESTROS PRODUCTOS */
+#nuestros-productos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top:20em;
+}
+
+#nuestros-productos h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#nuestros-productos p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Diseño de la cuadrícula de productos */
+#cotizacion-producto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    /* Diseño flexible con ajuste automático de columnas */
+}
+
+#producto {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+#producto img {
+    width: 150px;
+    height: auto;
+}
+.contador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 5px 0;
+    }
+    .porque-elegirnos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .porque-elegirnos img {
+        width: 80%;
+    }
+    .cotizacio-productos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo{
+        font-size: 40px;
+    }
+    .subtitulo {
+        font-size: 18px;
+    }
+    .cuadricula-productos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .porque-elegirnos img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo {
+        font-size: 16px;
+    }
+    .barra-de-navegación {
+        padding: 10px;
+    }
+    .barra-de-navegación a {
+        font-size: 12px;
+    }
+    .producto p {
+        font-size: 12px;
+    }
+    .porque-elegirnos img {
+        width: 100%;
+    }
+    /* Para pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Para tabletas (pantallas medianas) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+/* Para móviles (pantallas pequeñas) */
+@media screen and (max-width: px) {
+    .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+}
